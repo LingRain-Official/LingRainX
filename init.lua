@@ -1,0 +1,14 @@
+appname="LingRain"
+appver="Alpha"
+appcode="1"
+appsdk="28"
+path_pattern=""
+packagename="com.LingRain.cmr"
+theme="Theme_Material_Light_NoActionBar"
+developer="cmouren191"
+description="在有限的时间内创造无限的可能"
+debugmode=true
+user_permission={
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE"
+}

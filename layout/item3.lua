@@ -1,0 +1,51 @@
+require "import"
+import "util.m3-import"
+import "util.color"
+return
+{
+  MaterialCardView;
+  w=-1;
+  id="SettingCard";
+  StrokeColor=0,
+  radius=0,
+{
+  LinearLayoutCompat;
+  layout_width="match_parent";
+  orientation="horizontal";
+  padding="15dp";
+  layout_height="wrap_content";
+  
+  {
+    ImageView;
+    id="image";
+    layout_gravity="center";
+    layout_width="30dp";
+    layout_height="30dp";
+    layout_marginRight="20dp";
+    layout_marginLeft="10dp";
+    ColorFilter=colorOnBackground;
+  };
+  {
+    LinearLayout;
+    orientation="vertical";
+    layout_gravity="center";
+    layout_width="match_parent";
+    layout_height="wrap_content";
+    {
+      TextView;
+      id="text1";
+      layout_height="wrap_content",
+      textSize="16sp";
+      text="Text1";
+    };
+    {
+      TextView;
+      gravity="center";
+      id="text2";
+      layout_height="wrap_content";
+      textSize="15sp";
+      text="text2";
+    };
+  };
+};
+};

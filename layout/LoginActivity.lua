@@ -1,0 +1,74 @@
+require "import"
+import "util.m3-import"
+
+return{
+  LinearLayoutCompat;
+  orientation="vertical"; 
+  layout_height="match_parent";
+  layout_width="match_parent";
+  
+  gravity="center";
+  {
+    TextView;
+    text="LingRain";
+    TextSize="10sp";
+    layout_marginBottom="20dp",
+  };
+  {
+    TextInputLayout,
+    layout_width=-1,
+    hint="UID",
+    layout_marginStart="20dp",
+    layout_marginEnd="20dp",
+    
+    {
+      TextInputEditText,
+      id="user",
+      layout_width=-1,
+      singleLine=true,
+      style=MDC_R.style.Widget_Material3_TextInputEditText_OutlinedBox,
+    },
+  },
+  {
+    TextInputLayout,
+    layout_width=-1,
+    hint="Password",
+    layout_marginStart="20dp",
+    layout_marginEnd="20dp",
+    
+    {
+      TextInputEditText,
+      layout_width=-1,
+      singleLine=true,
+      id="password",
+      style=MDC_R.style.Widget_Material3_TextInputEditText_OutlinedBox,
+    },
+  },
+  {
+    LinearLayout;
+    layout_width="match_parent";
+    layout_height="wrap_content";
+    layout_margin="20dp";
+    gravity="center";
+    {
+      LinearLayout;
+      layout_weight="1";
+      {
+        MaterialButton;
+        text="注册";
+        id="register";
+      };
+    };
+    {
+      LinearLayout;
+      gravity="right";
+      layout_weight="1";
+      {
+        MaterialButton;
+        layout_gravity="right";
+        text="登录";
+        id="login";
+      };
+    };
+  };
+};

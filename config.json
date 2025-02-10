@@ -1,0 +1,24 @@
+{
+
+  "label": "LingRainX",
+  "package": "com.MikuMusicL.LR",
+
+  "versionName": "1.0Release",
+  "versionCode": "100",
+
+  "minSdkVersion": 28,
+  "targetSdkVersion": 29,
+
+  "debugmode": true,
+  "debuggermode": 1,
+
+  "user_permission": [
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE"
+  ],
+
+  "skip_compilation": [
+  
+  ]
+
+}
